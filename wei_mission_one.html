@@ -16,6 +16,22 @@
     <h2>
       the little title
     </h2>
+    <b>
+      the b title
+    </b>
+    <br/>
+    <strong>
+      the strong title
+    </strong>
+    <br/>
+    <em>
+      the em title
+    </em>
+    <br/>
+    <i>
+      the i title
+    </i>
+    
     <nav>
       <ul>
         <li><a href="https://www.baidu.com" target="_blank">百度搜索</a></li>
@@ -24,6 +40,11 @@
       </ul>
     </nav>
 
+    <ol>
+      <li>段落标题</li>
+      <li>段落标题</li>
+      <li>段落标题</li>
+    </ol>
     <main>
       <article>
         文档中可以脱离其他部分，独立出来而又完整，甚至可以复用的一部分，通常有自己的标题，当article内嵌article时，里外层的内容应该是相关的，比如一篇微博和它的评论
@@ -41,71 +62,102 @@
       侧边栏或者嵌入内容，通常认为是独立拆分出来而不受整体影响的一部分，作为主要内容的附属信息，如索引，词条列表，或者页面及站点的附属信息，如广告，作者资料介绍等
       侧边栏或者嵌入内容，通常认为是独立拆分出来而不受整体影响的一部分，作为主要内容的附属信息，如索引，词条列表，或者页面及站点的附属信息，如广告，作者资料介绍等
     </aside>
-
-
     <br/>
     <ol>
-      <li><text>难看的图片</text><br/><img src="http://img.hb.aicdn.com/d2d37169f49fd6eed525c3536b1b8cddd041cba41ef2b-ShTyC4_fw658"/></li>
-      <li><text>难看的图片</text><br/><img src="http://img.hb.aicdn.com/57fad4d5eda2eaea7f8773360dcee8992c2db99ebaf5-r5WkoA_fw658"/></li>
-      <li><text>难看的图片</text><br/><img src="http://img.hb.aicdn.com/d549e242a5a63964190da87c1a3d2caa8dee5962f931-VFq7aC_fw658"/></li>
+      <li>
+        <figure>
+          <figcaption>
+            难看的图片
+          </figcaption>
+          <img src="http://img.hb.aicdn.com/d2d37169f49fd6eed525c3536b1b8cddd041cba41ef2b-ShTyC4_fw658" alt="主流前端框架"/>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>
+            难看的图片
+          </figcaption>
+          <img src="http://img.hb.aicdn.com/57fad4d5eda2eaea7f8773360dcee8992c2db99ebaf5-r5WkoA_fw658" alt="各算法复杂度"/>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>
+            难看的图片
+          </figcaption>
+          <img src="http://img.hb.aicdn.com/d549e242a5a63964190da87c1a3d2caa8dee5962f931-VFq7aC_fw658" alt="各算法复杂度"/>
+        </figure>
+      </li>
     </ol>
     <input type="radio" id="nan" name="gender"/>
     <label for="nan">男</label>
     <input type="radio" id="nv" name="gender"/>
     <label for="nv">女</label>
-
+    <br/>
+    <br/>
     <select>
       <option>北京</option>
       <option selected="selected">上海</option>
       <option>深圳</option>
     </select>
-
+    <br/>
+    <br/>
     <input id="sport" checked="checked" type="checkbox"/>
     <label for="sport">运动</label>
     <input id="art" checked="checked" type="checkbox"/>
     <label for="art">艺术</label>
     <input id="science" checked="checked" type="checkbox"/>
     <label for="science">科学</label>
-
+    <br/>
+    <br/>
     <table border="2">
-        <tr>
+      <caption>
+        一张表
+      </caption>
+        <thead>
           <th>表头</th>
           <th>表头</th>
           <th>表头</th>
           <th>表头</th>
-        </tr>
-        <tr>
-          <td>内容</td>
-          <td>内容</td>
-          <td>内容</td>
-          <td><a href="#">操作</a></td>
-        </tr>
-        <tr>
-          <td>内容</td>
-          <td>内容</td>
-          <td>内容</td>
-          <td><a href="#">操作</a></td>
-        </tr>
-        <tr>
-          <td>内容</td>
-          <td>内容</td>
-          <td>内容</td>
-          <td><a href="#">操作</a></td>
-        </tr>
-        <tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>内容</td>
+            <td>内容</td>
+            <td>内容</td>
+            <td><a href="#">操作</a></td>
+          </tr>
+          <tr>
+            <td>内容</td>
+            <td>内容</td>
+            <td>内容</td>
+            <td><a href="#">操作</a></td>
+          </tr>
+          <tr>
+            <td>内容</td>
+            <td>内容</td>
+            <td>内容</td>
+            <td><a href="#">操作</a></td>
+          </tr>
+        </tbody>
+
+        <tfoot>
           <td colspan="2">总计</td>
           <td colspan="2">1000</td>
-        </tr>
+        </tfoot>
     </table>
 
     <br/>
 
-    <label for="email">请输入邮箱:<input type="text" placeholder="这是一个文本框输入框" id="email" name="email"/></label><br/>
-    <label for="username">请输入账号:<input type="text" placeholder="这是一个文本框输入框" id="username" name="username"/></label><br/>
-    <label for="password">请输入密码:<input type="text" placeholder="这是一个文本框输入框" id="password" name="password"/></label><br/>
-    <label for="describe">&nbsp;&nbsp;&nbsp;个人描述:<textarea type="text" id="describe" name="describe" style="height:40" placeholder="这是一个多行输入框这是一个多行输入框"></textarea></label><br/>
-    <br/>
-    <button type="submit" onclick="#">确认提交</button>
+    <label for="email">请输入邮箱:<input type="text" placeholder="这是一个文本框输入框" id="email" name="email"/></label><br/><br/>
+    <form>
+      <label for="username">请输入账号:<input type="text" placeholder="这是一个文本框输入框" id="username" name="username"/></label><br/><br/>
+      <label for="password">请输入密码:<input type="text" placeholder="这是一个文本框输入框" id="password" name="password"/></label><br/><br/>
+      <label for="describe">&nbsp;&nbsp;&nbsp;个人描述:<textarea type="text" id="describe" name="describe" style="height:40" placeholder="这是一个多行输入框这是一个多行输入框"></textarea></label><br/>
+      <br/>
+      <button type="submit">确认提交</button>
+    </form>
     <br/>
     <br/>
     <footer>
